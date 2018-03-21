@@ -1,0 +1,33 @@
+{
+  "name": "gateauth",
+  "version": "0.0.3",
+  "description": "Gateway Authenticator",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && mocha"
+  },
+  "keywords": [
+    "gateway",
+    "auth",
+    "node",
+    "http"
+  ],
+  "author": "D.A.Paula",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "mocha": "^5.0.4"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debersonpaula/gateauth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/debersonpaula/gateauth/issues"
+  },
+  "homepage": "https://github.com/debersonpaula/gateauth#readme"
+}
