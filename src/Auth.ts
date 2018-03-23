@@ -91,7 +91,12 @@ export class TGateAuth {
 			if (user) {
 				const access = user.access;
 				if (access) {
-					return access.tokenId === tokenId && access.expires > Date.now();
+					if (access.expires < Date.now()) {
+						this.destroyAccess(id);
+						return false;
+					} else {
+						return access.tokenId === tokenId;
+					}	
 				}
 			}
 		}
