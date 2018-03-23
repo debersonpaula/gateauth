@@ -9,4 +9,4 @@ export interface TUser {
 	access?: TAccessToken;
 }
 export type TUsers = { [key: number] : TUser };
-export type TUserHandler = (id: number, user: TUser) => void;
+export type TUserHandler = (id?: number, user?: TUser) => void;

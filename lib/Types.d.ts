@@ -11,4 +11,4 @@ export interface TUser {
 export declare type TUsers = {
     [key: number]: TUser;
 };
-export declare type TUserHandler = (id: number, user: TUser) => void;
+export declare type TUserHandler = (id?: number, user?: TUser) => void;

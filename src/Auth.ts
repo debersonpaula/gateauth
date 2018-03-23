@@ -109,6 +109,9 @@ export class TGateAuth {
 			const user = this._users[id];
 			if (user) {
 				user.access = undefined;
+				if (this.OnUserChange) {
+					this.OnUserChange(id, user);
+				}
 				return true;
 			}
 		}
